@@ -1,0 +1,194 @@
+
+
+/* <================= Section Contact =================> */
+
+#contact {
+  padding: 30px;
+  
+  transition: 0.5s ease-in-out;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact .wrapper {
+  backdrop-filter: blur(5px) brightness(0.3);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+
+#contact .wrapper::before {  
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+#contact .wrapper:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+#contact .wrapper::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: #120907;
+  z-index: -1;
+  transition: transform .3s ease;
+}
+
+#contact .container-grid {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  align-content: center;
+
+}
+
+#contact .container-content {
+  padding: 0 50px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1em;
+  flex-direction: column;
+  border-right: 5px solid var(--secondary-color);
+}
+
+#contact .container-content h1 {
+  color: var(--main-color);
+  font-size: clamp(1.5em, 4vw, 3em);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+#contact .container-content p {
+  color: var(--text-color);
+}
+
+#contact .container-content content a{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: transparent;
+  border: 2px solid var(--main-color);
+  border-radius: 5px;
+  color: var(--text-color);
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 17px;
+  transition: 0.5s ease;
+  text-decoration: none;
+
+}
+
+#contact .container-content content a:hover{
+  border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
+  background-color: var(--secondary-color);
+}
+
+
+
+#contact .container-form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 50px;
+  grid-column: span 2;
+}
+
+#contact .container-form p {
+  color: var(--main-color);
+  font-weight: 600;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  width: -webkit-fill-available;
+}
+
+form input {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px 0;
+  outline: none;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 2px solid var(--main-color);
+  color: var(--main-color);
+}
+
+form .message {
+  height: 300px;
+}
+
+form input::placeholder{
+  color: var(--text-color);
+}
+
+form input.message::placeholder {
+
+  position: absolute;
+  left: 10px;
+  top: 20px;
+}
+
+form button {
+  padding: 10px;
+  background-color: transparent;
+  border: 2px solid var(--main-color);
+  color: var(--main-color);
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  margin-top: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+form button:hover {
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+#contact .me {
+  display: flex;
+  gap: 0.5em;
+  color: var(--main-color);
+  margin-top: 30px;
+}
+
+#contact .mail {
+  display: flex;
+  gap: 0.5em;
+  color: var(--main-color);
+  margin-top: 10px;
+}
+
+#contact .home {
+  display: flex;
+  gap: 0.5em;
+  color: var(--main-color);
+  margin-top: 10px;
+}
+
+#contact .tel {
+  display: flex;
+  gap: 0.5em;
+  color: var(--main-color);
+  margin-top: 10px;
+}
+

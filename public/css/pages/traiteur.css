@@ -1,0 +1,474 @@
+
+
+
+
+/***************************************************Accueil****************************************************************/
+
+#top {
+  /*background: url(pic/resto.jpg) center/cover;*/
+  /* filter: blur(10px); */
+  padding: 20px;
+  min-height: 100vh;
+  transition: 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#top .wrapper {
+  backdrop-filter: blur(5px) brightness(0.4);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  margin-top: 100px;
+  width: 100%;
+}
+
+#top .wrapper::before {  
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+#top .wrapper:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+#top .wrapper::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: #120907;
+  z-index: -1;
+  transition: transform .3s ease;
+}
+
+#top .wrapper .content-main-title h1 {
+  font-size: clamp(2.5em, 5vw, 4em);
+  line-height: 1.3;
+}
+
+#top .box-grid {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#top .box-grid .container-picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../assets/logo.png") ;
+  background-position: center ;
+  background-size: 390px;
+  border-radius: 9999px;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+}
+
+#top .box-grid .border {
+  height: 400px;
+  width: 400px;
+  border: solid 4px var(--secondary-color);
+  margin-left: -40px;
+  margin-top: 40px;
+  border-radius: 9999px;
+  position: absolute;
+}
+
+#top .box-grid .border:nth-child(1) {
+  margin-right: -100px;
+  margin-bottom: 50px;
+  border: solid 4px var(--main-color);
+}
+
+#top .box-grid .container-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  gap: 0em;
+}
+
+#top .box-grid .container-content .content-title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 5px 30px;
+}
+
+#top .box-grid .container-content .content-title h2 {
+  color: var(--secondary-color);
+  font-size: clamp(1em, 2vw, 2.4em);
+  line-height: 1.3;
+}
+
+#top .box-grid .container-content .content-title h1 {
+  font-size: clamp(2.5em, 5vw, 4em);
+  line-height: 1.3;
+}
+
+#top .box-grid .container-content .content {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  max-width: 500px;
+}
+
+#top .box-grid .container-content .content p {
+  text-align: center;
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 18px;
+}
+
+#top .box-grid .container-content .content p span {
+  color: var(--main-color);
+  font-weight: 600;
+}
+
+#top .box-grid .container-content .content .info {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 30px;
+}
+
+#top .box-grid .container-content .content .info a {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: transparent;
+  border: 2px solid var(--main-color);
+  border-radius: 5px;
+  color: var(--text-color);
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 17px;
+  transition: 0.5s ease;
+  text-decoration: none;
+}
+
+#top .box-grid .container-content .content .info a:hover {
+  border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+#top .box-grid .container-content .content .info .social {
+  display: flex;
+  gap: 1em;
+}
+
+#top .box-grid .container-content .content .info .social a {
+  padding: 10px;
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+
+  transition: 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#top .box-grid .container-content .content .info .social a:hover {
+  background-color: var(--secondary-color);
+}
+
+#top .box-grid .container-content .content .info .social a i {
+  scale: 1.3;
+}
+
+#top .container-arrow {
+  position: relative;
+  top: 50px;
+}
+
+#top .container-arrow i {
+  scale: 3;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+#top .container-arrow i:hover {
+  color: var(--secondary-color) !important;
+}
+
+@media screen and (max-width: 1000px) {
+  #top .box-grid {
+    grid-template-columns: 1fr;
+    gap: 53px;
+    bottom: -100px;;
+  }
+
+  #top .wrapper{
+    margin-top: 90px;
+  }
+}
+
+/***************************************************** Description *********************************************************/
+
+#descriptiontraiteur {
+  background-color: #26962a;
+  /*background: url(pic/resto.jpg) center/cover;*/
+  /* filter: blur(10px); */
+  margin-top: 90px;
+  min-height: 100vh;
+  transition: 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#descriptiontraiteur .wrapper {
+  backdrop-filter: blur(5px) brightness(0.4);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+
+  width: 100%;
+}
+
+#descriptiontraiteur .wrapper::before {  
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+#descriptiontraiteur .wrapper:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+#descriptiontraiteur .wrapper::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: #120907;
+  z-index: -1;
+  transition: transform .3s ease;
+}
+
+#descriptiontraiteur .wrapper .content-main-title h1 {
+  font-size: clamp(2.5em, 5vw, 4em);
+  line-height: 1.3;
+}
+
+#descriptiontraiteur .box-grid {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#descriptiontraiteur .box-grid .container-picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../assets/logo.png") ;
+  background-position: center ;
+  background-size: 390px;
+  border-radius: 9999px;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+}
+
+#descriptiontraiteur .box-grid .container-picture-galerie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../assets/figue.jpg") ;
+  background-position: center ;
+  background-size: 550px;
+  border-radius: 9999px;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+}
+
+#descriptiontraiteur .box-grid .container-picture-ecole {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../assets/aperos.jpg") ;
+  background-position: center ;
+  background-size: 550px;
+  border-radius: 9999px;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+}
+
+#descriptiontraiteur .box-grid .container-picture-ubi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../assets/buffet.jpg") ;
+  background-position: center ;
+  background-size: 550px;
+  border-radius: 9999px;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+}
+
+#descriptiontraiteur .box-grid .container-picture-chambre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../assets/aperos2.jpg") ;
+  background-position: center ;
+  background-size: 550px;
+  border-radius: 9999px;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+}
+
+#descriptiontraiteur .box-grid .border {
+  height: 400px;
+  width: 400px;
+  border: solid 4px var(--secondary-color);
+  margin-left: -40px;
+  margin-top: 40px;
+  border-radius: 9999px;
+  position: absolute;
+}
+
+#descriptiontraiteur .box-grid .border:nth-child(1) {
+  margin-right: -100px;
+  margin-bottom: 50px;
+  border: solid 4px var(--main-color);
+}
+
+#descriptiontraiteur .box-grid .container-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  gap: 0em;
+}
+
+#descriptiontraiteur .box-grid .container-content .content-title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 5px 30px;
+}
+
+#descriptiontraiteur .box-grid .container-content .content-title h2 {
+  color: var(--secondary-color);
+  font-size: clamp(1em, 2vw, 2.4em);
+  line-height: 1.3;
+}
+
+#descriptiontraiteur .box-grid .container-content .content-title h1 {
+  font-size: clamp(2.5em, 5vw, 4em);
+  line-height: 1.3;
+}
+
+#descriptiontraiteur .box-grid .container-content .content {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  max-width: 500px;
+}
+
+#descriptiontraiteur .box-grid .container-content .content p {
+  text-align: center;
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 18px;
+}
+
+#descriptiontraiteur .box-grid .container-content .content p span {
+  color: var(--main-color);
+  font-weight: 600;
+}
+
+#descriptiontraiteur .box-grid .container-content .content .info {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 30px;
+}
+
+#descriptiontraiteur .box-grid .container-content .content .info a {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: transparent;
+  border: 2px solid var(--main-color);
+  border-radius: 5px;
+  color: var(--text-color);
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 17px;
+  transition: 0.5s ease;
+  text-decoration: none;
+}
+
+#descriptiontraiteur .box-grid .container-content .content .info a:hover {
+  border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+#descriptiontraiteur .box-grid .container-content .content .info .social {
+  display: flex;
+  gap: 1em;
+}
+
+#descriptiontraiteur .box-grid .container-content .content .info .social a {
+  padding: 10px;
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+
+  transition: 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#descriptiontraiteur .box-grid .container-content .content .info .social a:hover {
+  background-color: var(--secondary-color);
+}
+
+#descriptiontraiteur .box-grid .container-content .content .info .social a i {
+  scale: 1.3;
+}
+
+#descriptiontraiteur .container-arrow {
+  position: absolute;
+  bottom: 70px;
+}
+
+#descriptiontraiteur .container-arrow i {
+  scale: 3;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+#descriptiontraiteur .container-arrow i:hover {
+  color: var(--secondary-color) !important;
+}
+
+@media screen and (max-width: 1000px) {
+  #descriptiontraiteur .box-grid {
+    grid-template-columns: 1fr;
+    gap: 53px;
+    bottom: -100px;;
+  }
+
+}
+
