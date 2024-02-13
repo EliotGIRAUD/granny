@@ -102,7 +102,6 @@
                 require 'PHPMailer/src/SMTP.php'; 
 
                 if (isset($_POST["send"])) {
-                    echo "ezqFef";
                     $mail = new PHPMailer(true); 
                     $mail->isSMTP(); 
                     $mail->Host = 'smtp.office365.com'; 

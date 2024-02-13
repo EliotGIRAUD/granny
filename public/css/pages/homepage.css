@@ -56,7 +56,7 @@
   align-items: center;
   background-image: url("../../assets/logo.png");
   background-position: center ;
-  background-size: 390px;
+  background-size: cover;
   border-radius: 9999px;
   width: 400px;
   height: 400px;
@@ -209,6 +209,18 @@
     display: none;
   }
 }
+
+@media screen and (max-width: 600px){
+  #accueil .box-grid .container-picture{
+    width: 300px !important;
+    height: 300px !important;
+  } 
+
+  #accueil .box-grid .border {
+    height: 350px !important;
+    width: 350px !important;
+  }
+}
 /******************************** Description ***********************************/
 
 #description {
@@ -269,7 +281,7 @@
   align-items: center;
   background-image: url("../../assets/burger-background.jpg") ;
   background-position: center ;
-  background-size: 800px;
+  background-size: cover;
   border-radius: 9999px;
   width: 600px;
   height: 600px;
@@ -407,6 +419,30 @@
 }
 
 
+
+@media screen and (max-width: 600px){
+  #description .box-grid .container-picture{
+    width: 300px !important;
+    height: 300px !important;
+  } 
+
+  #description .box-grid .border {
+    height: 350px !important;
+    width: 350px !important;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  #description .box-grid .container-picture{
+    width: 500px ;
+    height: 500px;
+  }
+
+  #description .box-grid .border {
+    height: 550px;
+    width: 550px;
+  }
+}
 
 @media screen and (max-width: 1000px) {
   #description .box-grid {

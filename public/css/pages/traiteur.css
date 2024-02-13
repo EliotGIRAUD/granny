@@ -64,7 +64,7 @@
   align-items: center;
   background-image: url("../../assets/logo.png") ;
   background-position: center ;
-  background-size: 390px;
+  background-size: cover;
   border-radius: 9999px;
   width: 400px;
   height: 400px;
@@ -209,6 +209,22 @@
 
   #top .wrapper{
     margin-top: 90px;
+  }
+
+  #top .container-arrow {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px){
+  #top .box-grid .container-picture{
+    width: 300px !important;
+    height: 300px !important;
+  } 
+
+  #top .box-grid .border {
+    height: 350px !important;
+    width: 350px !important;
   }
 }
 
@@ -472,3 +488,30 @@
 
 }
 
+
+@media screen and (max-width: 600px){
+  #descriptiontraiteur .box-grid .container-picture-chambre{
+    width: 300px !important;
+    height: 300px !important;
+  } 
+
+  #descriptiontraiteur .box-grid .container-picture-ecole{
+    width: 300px !important;
+    height: 300px !important;
+  } 
+
+  #descriptiontraiteur .box-grid .container-picture-galerie{
+    width: 300px !important;
+    height: 300px !important;
+  } 
+
+  #descriptiontraiteur .box-grid .container-picture-ubi{
+    width: 300px !important;
+    height: 300px !important;
+  } 
+
+  #descriptiontraiteur .box-grid .border {
+    height: 350px !important;
+    width: 350px !important;
+  }
+}
