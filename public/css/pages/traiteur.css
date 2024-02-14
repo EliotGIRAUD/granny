@@ -319,16 +319,16 @@
   align-items: center;
   background-image: url("../../assets/ecole.jpg") ;
   background-position: center ;
-  background-size: 450px;
+  background-size: cover;
   border-radius: 9999px;
-  width: 430px;
+  width: 460px;
   height: 200px;
   margin: auto;
 }
 
 #descriptiontraiteur .box-grid .container-picture-ecole .border {
-  height: 250px;
-  width: 500px;
+  height: 220px;
+  width: 470px;
   border: solid 4px var(--secondary-color);
   margin-left: -40px;
   margin-top: 40px;
@@ -508,9 +508,14 @@
   } 
 
   #descriptiontraiteur .box-grid .container-picture-ecole{
-    width: 300px !important;
-    height: 300px !important;
+    width: 350px !important;
+    height: 140px !important;
   } 
+
+  #descriptiontraiteur .box-grid .container-picture-ecole .border {
+    height: 150px !important;
+    width: 370px !important;
+  }
 
   #descriptiontraiteur .box-grid .container-picture-galerie{
     width: 300px !important;
