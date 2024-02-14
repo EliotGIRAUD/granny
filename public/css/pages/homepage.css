@@ -179,7 +179,7 @@
 
 #accueil .container-arrow {
   position: relative;
-  bottom: 90px;
+  bottom: -100px;
 }
 
 #accueil .container-arrow i {
