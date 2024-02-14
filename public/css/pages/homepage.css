@@ -526,19 +526,6 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
-#info .box-grid .container-picture {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(pic/resto.jpg) ;
-  background-position: center ;
-  background-size: 390px;
-  border-radius: 9999px;
-  width: 400px;
-  height: 400px;
-  margin: auto;
-}
-
 #info .box-grid .border {
   height: 400px;
   width: 400px;
@@ -680,3 +667,8 @@
 
 
 
+@media screen and (max-width: 800px){
+  #info .box-grid {
+    grid-template-columns: repeat(1, 1fr);
+  } 
+}
