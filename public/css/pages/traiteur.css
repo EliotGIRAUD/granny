@@ -18,6 +18,7 @@
 
 #top .wrapper {
   backdrop-filter: blur(5px) brightness(0.4);
+  -webkit-backdrop-filter: blur(5px) brightness(0.4);
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -245,6 +246,7 @@
 
 #descriptiontraiteur .wrapper {
   backdrop-filter: blur(5px) brightness(0.4);
+  -webkit-backdrop-filter: blur(5px) brightness(0.4);
   align-items: center;
   justify-content: center;
   flex-direction: column;
