@@ -104,14 +104,14 @@
                 if (isset($_POST["send"])) {
                     $mail = new PHPMailer(true); 
                     $mail->isSMTP(); 
-                    $mail->Host = 'smtp.office365.com'; 
+                    $mail->Host = 'ssl0.ovh.net'; 
                     $mail->SMTPAuth = true; 
-                    $mail->Username = 'eliotgiraud.pro@outlook.fr'; 
-                    $mail->Password = 'LecomptePro741'; 
+                    $mail->Username = 'contact@grannysmithandco.com'; 
+                    $mail->Password = 'Granny.Smith31.b82326a98';
                     $mail->SMTPSecure = 'tls'; 
-                    $mail->Port = 587; 
-                    $mail->setFrom('eliotgiraud.pro@outlook.fr'); 
-                    $mail->addAddress('eliotgiraud.pro@outlook.fr'); 
+                    $mail->Port = 993; 
+                    $mail->setFrom('contact@grannysmithandco.com'); 
+                    $mail->addAddress('contact@grannysmithandco.com'); 
                     $mail->isHTML(true); 
                     $mail->Subject = $_POST["subject"] . " - Site vitrine Granny Smith"; 
                     $mail->Body = "<br /><br />De : " . $_POST["email"] . "<br /><br />" . $_POST["message"]; 
