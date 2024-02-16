@@ -6,6 +6,7 @@
     <title>Granny Smith</title>
     <script src="https://kit.fontawesome.com/784f68a03c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="public/css/style.css">
+    <link rel="shortcut icon" href="public/assets/logo.png" type="image/png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
 </head>
 <body>
@@ -108,8 +109,8 @@
                     $mail->SMTPAuth = true; 
                     $mail->Username = 'contact@grannysmithandco.com'; 
                     $mail->Password = 'Granny.Smith31.b82326a98';
-                    $mail->SMTPSecure = 'tls'; 
-                    $mail->Port = 993; 
+                    $mail->SMTPSecure = 'ssl'; 
+                    $mail->Port = 465; 
                     $mail->setFrom('contact@grannysmithandco.com'); 
                     $mail->addAddress('contact@grannysmithandco.com'); 
                     $mail->isHTML(true); 
