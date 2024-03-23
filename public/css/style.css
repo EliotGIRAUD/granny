@@ -39,7 +39,9 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
-    /*background-size: cover;*/
+    -webkit-background: url("../../public/assets/mandala.jpg");
+    -webkit-background-size: cover;
+    -webkit-background-position: center;
     background-size: 100vw 100vh;
   }
   
